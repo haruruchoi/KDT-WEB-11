@@ -1,0 +1,11 @@
+ul > .orange {
+    color: red;
+}
+.orange + li {
+    color: orange;
+}
+
+/* 여기는 태그(li&span)만 와야해서 여러개를 . 앞에 적을 수 없다 */
+
+/* div . orange 는 모든 div 안의 orange가 다 적용 된다
+div > . orange는 div의 자식만 적용 */

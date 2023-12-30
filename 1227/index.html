@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDT 11기</title>
+</head>
+<body>
+    <!--div(division)태그: block태그로서 한줄의 영역을 차지-->
+    <div>Hello World!!!</div>
+    <div>안녕하세요.</div>
+    <!--h0도 h7도 없고 h1~h6(제목태그)까지만 존재/한줄의 영역을 전부 차지하는 블럭태그이다.-->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!--문장을 쓰는 곳 <p>태그-->
+    <p>안녕하세요! <br> 저는 하루입니다.</p>
+    <!--줄바꿈 태그 <br>태그-->
+    <!--hr태그: 한줄 그어줌/<hr>태그는 한줄이 끝 </hr>이 없다./라인 구분을 위한 역할-->
+    <hr>
+    <ul type="disc"> <!--<ul>태그: 순서없는 목록-->
+        <!--ul태그 속성(마커모양): disc 검정원 square 사각형 circle 흰원 none 아무것도 없음-->
+        <li>사과</li> <!--<li>태그: ul이나 ol태그 안에 있는 list를 작성하는  태그-->
+        <li>바나나</li>
+        <li>파인애플</li>
+    </ul>    
+    <!--ol태그: 순서있는 목록
+    ol태그속성(순번모양): 1,A,a,I,i 등으로 나타낼 수 있다. 
+    start: 시작번호를 설정
+    reversed: 역순으로 설정/뒤에 붙여넣기만 해주면 된다. -->
+
+    <ol type="1" start="10" reversed>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>파인애플</li>
+    </ol>
+    <ul type="square">
+        <li>
+            <ol>
+            <li><b>일</b></li> <!--b와 strong은 거의 같다고 생각하면 된다.-->
+            <li><strong>이</strong></li>
+            <li><i>삼</i></li>
+            </ol>
+        </li>
+        <li> 
+            <ol>
+            <li><em>일</em></li>
+            <li><del>이</del></li>
+            <li><u>삼</u></li>
+            </ol>
+         </li>  
+    </ul>
+    <!--img태그: 이미지를 등록-->
+    <img src="https://ssl.pstatic.net/melona/libs/1474/1474337/1b1f621b7ffe163e0a89_20231226163004163.jpg" alt="광고 이미지" />
+    <img src="https://s.pstatic.net/shopping.phinf/20231219_19/8fa5a10a-fe73-42ae-b576-ec6e48c0f143.jpg" alt="쥬얼리"/>
+
+    <!--a태그(inline 태그-블럭이 없는 태그이기 때문에 영역이 없음,그래서 사진 옆에 붙어있던 것):
+    페이지를 이동, target은 현재창을 바꿀건지 새로운 창으로 이동할건지 결정-->
+    <!--div(블럭태그-한줄을 갖고 있는)를 이용해서 a 태그를 중첩시켜줌 그냥 a태그만
+    치면 사진 옆에 위치함-->
+    <!--blank를 사용하면 새로운 창에서 열리고 self 를 쓰면 현재 창에서 열린다.-->
+   <div>
+        <a href="https://www.naver.com/" target="_self">이동</a>
+        <a href="https://www.naver.com/" target="_blank">이동</a>
+        <a href="https://www.naver.com/" target="_blank">이동</a> 
+        <!--사이사이 div를 안써주면 한줄에 이동만 3개 나옴-->
+    </div>
+    <div>
+        <span style="color: red;">안녕하세요</span><span>반갑습니다.</span>
+        <!--inline 중에 가장 유명한 게 a와 span 태그이다.-->
+    </div>
+
+    <hr>
+
+    <!--form 태그: input 태그를 담는 역할, 서버로 input의 데이터(value)를 전송시키는 역할-->
+    <!--placeholder속성: 사용자에게 안내해주는 역할 ex)네모칸 안에 이름이나 비밀번호라고 적어주기-->
+    <form>
+        <input type="button" value="전송" /> <!--<input></input>이 아니다 <input  />이다-->
+        <button type="summit">버튼</button><br />
+        <input type="text" placeholder="이름" value="hi" readonly /><br /> <!--readonly 선택은
+        못하지만 서버로는 넘어감-->
+        <!--placeholder은 안내만 하는 역할이라면 value에 hi를 쓰면 직접적인 값이 입력된 뒤 서버로 넘어감-->
+        <input type="password" placeholder="비밀번호" value="12345" /><br/>
+        <!--input도 button도 모두 inline 요소이다-->
+        <!--서밋은 자동으로 전송된다. 전송되는게 싫으면 button type="button"으로 하기-->
+        <input type="checkbox" name="food" value="pizza" />피자<br /> 
+        <input type="checkbox" name="food" value="chicken" checked />치킨 <br />
+        <!--input type checkbox의 pizza는 벡엔드로
+        가는 정보이고 뒤에 피자는 html에게 한번 더 입력해주는 용도--> 
+        <!--food라는 체크박스에 pizza와 chicken 두개 다 묶여있음
+        chicken 뒤에 checked를 입력해주면 자동체크 된다.-->
+        <input type="radio" name="hobby" value="camping"/>캠핑 <br />
+        <input type="radio" name="hobby" value="hiking" />하이킹 <br />
+        <input type="radio" name="hobby" value="swimming" disabled />수영 <br />
+        <!--disabled는 아예 선택지에서 선택이 안된다.-->
+        <!--radio는 무조건 1개를 선택해야 할때 사용함, 선택 해도 안해도 될때는 checkbox 이용-->
+        <input type="date" /><br />
+        <input type="time" /><br />
+        <input type="datetime-local" /><br />
+        <select>
+        
+            <optgroup label="ASIA">
+
+            <option value="korea">대한민국</option>
+            <option>일본</option>
+            <option>베트남</option>
+            <option disabled>중국</option>
+            </optgroup>
+
+            <optgroup label="AMERICA">
+
+            <option>미국</option>
+            <option>캐나다</option>
+            
+            </optgroup>
+            
+        </select>
+        <!--여러개중에 한개의 값을 선택하는게 select-->
+    
+    </form>
+
+</body>
+</html>

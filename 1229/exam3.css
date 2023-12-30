@@ -1,0 +1,10 @@
+h1:hover {
+    color: red;
+    cursor: crosshair;
+}
+a:active {
+    background-color: blue;
+}
+input:focus {
+    background-color: orange;
+}

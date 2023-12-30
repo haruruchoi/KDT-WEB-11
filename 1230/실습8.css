@@ -1,0 +1,24 @@
+.box {
+    background-color: #ffa500;
+    display: inline-block;
+    width: auto;
+    height: 200px;
+}
+.html {
+    display: inline-block;
+    background-color: skyblue;
+    width: 200px;
+    height: 100px;
+}
+.css {
+    display: inline-block;
+    background-color: green;
+    width: 200px;
+    height: 100px;
+}
+.javascript {
+    display: inline-block;
+    background-color: red;
+    width: 200px;
+    height: 100px;
+}

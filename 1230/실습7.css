@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Rubik Glitch';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content1 {
+    font-family: 'Rubik Glitch', sans-serif;
+    font-weight: 700;
+}
+
+.content2 {
+    font-family: 'seolleimcool';
+}

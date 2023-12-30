@@ -1,0 +1,7 @@
+.text {
+    width: 300px;
+    text-align: justify;
+    text-decoration: line-through;
+}
+/* left,right,center,justify(양쪽) 등이 사용가능 폰트의 위치를 옮겨준다 */
+/* text-decoration은 underline, line-through 등이 가능하다 */

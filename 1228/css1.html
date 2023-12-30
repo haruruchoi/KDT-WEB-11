@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+        li{
+            color: red;
+            width: 50px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+<body><!--style태그는 꼭 head에서만 사용해야한다 여기서 쓰면 이상해짐/style은 내장방식-->
+    <div>
+        <h1 style="color: blue;">css 사용법 익히기</h1><!--color를 이용해서 폰트의 색상을 바꿀 수 있다./rgb/
+       위에 link로 index.css의 green컬러를 불러왔지만 ul에서는 ul가 우선이기 때문에 aqua가 적용되는것이다. -->
+        <ul style="background-color: yellow;"><!--background-color: 배경 색상을 변경/여기는 inline 방식--> 
+            <li>원</li>
+            <li>투</li>
+            <li>쓰리</li>
+        </ul>
+    </div>
+</body>
+</html>

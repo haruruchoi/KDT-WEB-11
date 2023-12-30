@@ -1,0 +1,19 @@
+/*눈누 폰트는 웹폰트 가져오기 방식으로 폰트가져옴*/
+/*구글 폰트는 link방식으로 폰트를 가져옴*/
+/*font-face 방식과 font-family 방식 2가지로 폰트변경이 가능하다*/
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'JalnanGothic', sans-serif;
+}
+/*font-family에 써주는게 적용하겠다는 의미이다.*/
+.content1 {
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+}

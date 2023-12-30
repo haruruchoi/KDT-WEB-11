@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습2</title>
+</head>
+<body>
+    <h5>설문조사</h5>
+    <!--label태그: input에 라벨을 달아주는 태그-->
+    <label for="name">이름</label><!--for: ~에 의해서-->
+    <input type="text" placeholder="이름" id="name" /><br /><!--id는 중복되면 안되기때문에 id="name"-->
+    <label for="email">이메일</label>
+    <input type="email" placeholder="yesihyezi4@naver.com" id="email" />
+    <h6>나이</h6>
+    <input type="number" /> <!--숫자만 입력되는 태그이고 숫자쓰는곳에서는 꼭 number를 쓴다.-->
+    <input type="radio" name="age" id="ten" />10대 <!--id="ten" 누르면 10대 옆에 있는 동그라미말고도 10대를
+    눌러도 버튼이 눌린다-->
+    <label for="ten">10대</label>
+    <input type="radio" name="age" />20대
+    <input type="radio" name="age" />30대
+    <input type="radio" name="age" />40대
+    <input type="radio" name="age" />50대
+    <input type="radio" name="age" />60대 이상
+    <!--한개씩 쓰기 귀찮을 때 input*6 쓰면 6개가 한번에 생기고
+    6개를 똑같이 쓰고 싶을때 ctrl + alt 누르면 된다.-->
+    <h6>원하는 강의(복수응답 가능합니다.)</h6>
+    <input type="checkbox" name="class" id="html" />
+    <label for="html">html</label>
+    <input type="checkbox" name="class" />javascript
+    <input type="checkbox" name="class" />css
+    <br />
+    <br />
+    <textarea rows="10" cols="50" placeholder="텍스트입력">텍스트를 입력하세요</textarea>
+    <!--텍스트를 입력하지 않을때는 placeholder로 텍스트입력을 넣어주면 된다.(이건 다시 한번 찾아보기)-->
+    <input type="button" />제출
+
+</body>
+</html>

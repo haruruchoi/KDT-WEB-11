@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  /*head에서 주석넣는 방법이다. ctrl+/ 
+    *{
+        color: red;
+    } 전체 선택자 방식
+    */
+        .orange { 
+            color: red;
+        }
+        .bgColor {  
+            background-color: green;
+            color: black;
+        }
+        /* 내장방식: .bgcolor 에서 두개의 클래스를 적용했지만 실제로 적용되는건
+        더 나중에 작성된 color이다.
+        링크방식: 링크방식은 순서가 중요하지 않기 때문에 body에 적힌 클래스 순서가 중요하다. */
+
+        #orange{
+            /* font-size: 글씨의 크기를 변경 */
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body> <!--부모에게 어떤 속성을 주면 자식태그도 물려받는다.-->
+    <div>
+        <ul>
+            <li class="apple">사과</li>
+            <li class="strawberry">딸기</li>
+            <li id="orange" class="orange">오렌지</li>
+            <!--id는 딱 1개만 쓸 수 있다. id의 orange와 class의 orange는 다른것이다.-->
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span class="orange bgColor">오렌지</span> <!--class는 한칸 띄우면 여러개 적용가능하다-->
+    </div>
+</body>
+</html>
